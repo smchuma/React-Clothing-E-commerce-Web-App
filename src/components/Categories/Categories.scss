@@ -1,0 +1,28 @@
+@import "../../scss/config";
+
+.categories-container {
+  width: 100%;
+  display: flex;
+  background-color: #1a1a1a;
+  flex-direction: column;
+  color: white;
+  padding: 0px 50px;
+
+  .category-container-title {
+    text-align: center;
+    padding: 50px 0;
+    font-family: $font-main;
+  }
+  h1 {
+    text-align: center;
+    font-size: 25px;
+    padding: 50px 0;
+    font-family: $font-main;
+    color: $quaternary-color;
+  }
+}
+.category {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

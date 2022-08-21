@@ -1,0 +1,38 @@
+@import "../../scss/config";
+
+.footer {
+  max-width: 100%;
+  font-family: $font-main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  height: 40vh;
+  text-align: center;
+  .links {
+    display: flex;
+    padding-bottom: 20px;
+    ul {
+      li {
+        display: inline-block;
+        padding: 0 20px;
+        font-size: 18px;
+      }
+    }
+  }
+  .copyright {
+    h2 {
+      padding-top: 20px;
+      font-family: $font-italic;
+      font-size: 40px;
+
+      span {
+        font-family: $font-main;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@import "../../scss/mobile";

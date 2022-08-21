@@ -1,0 +1,37 @@
+@import "../../scss/config";
+
+.banner {
+  color: white;
+  display: flex;
+  max-height: 70vh;
+  overflow: hidden;
+  max-width: 80%;
+  margin: auto;
+  font-family: $font-main;
+
+  &-img {
+    img {
+      max-width: 110%;
+      max-height: 110%;
+      padding-top: 10px;
+      padding-left: 100px;
+    }
+  }
+
+  &-text {
+    width: 80%;
+    padding: 120px 0;
+
+    h2 {
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify;
+    }
+  }
+}
+
+@import "../../scss/mobile";

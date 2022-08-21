@@ -1,0 +1,27 @@
+$bg-color: #262626;
+$primary-color: #59392d;
+$secondary-color: #f2f2f2;
+$tertiary-color: #8c543f;
+$quaternary-color: #d99e91;
+$font-italic: "Great Vibes", cursive;
+$font-main: "Poppins", sans-serif;
+$asset-img: "/assets/images/bgmobile2.jpg";
+$asset-img2: "/assets/images/bgmobile3.jpg";
+
+.btn-primary {
+  width: 120px;
+  margin: 0 10px;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid $secondary-color;
+  padding: 10px 0;
+  color: white;
+  transition: 1s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    background: white;
+    color: black;
+  }
+}

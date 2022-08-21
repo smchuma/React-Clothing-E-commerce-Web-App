@@ -1,0 +1,49 @@
+@import "../../scss/config";
+
+.navbar {
+  background-color: #363636;
+  padding: 20px 0;
+  box-shadow: 5px 1px #1a1a1a;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    color: $secondary-color;
+    font-family: $font-main;
+
+    .logo {
+      font-family: $font-italic;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding-top: 3px;
+    }
+
+    .nav-links {
+      padding-top: 12px;
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        padding-right: 280px;
+        cursor: pointer;
+
+        li {
+          margin-left: 50px;
+          font-family: $font-main;
+          transition: 1s ease;
+          &:hover {
+            transform: scale(1.2);
+            color: $quaternary-color;
+          }
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+    }
+  }
+}
+
+@import "../../scss/mobile";

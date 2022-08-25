@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -6,14 +7,24 @@ const Navbar = () => {
       <div className="navbar">
         <nav>
           <div className="logo">
-            <h1>Zenku</h1>
+            <Link to="/">
+              <h1>Zenku</h1>
+            </Link>
           </div>
           <div className="nav-links">
             <ul>
-              <li>Home</li>
-              <li>Shop</li>
-              <li>Contact</li>
-              <li>About</li>
+              <Link to="/">
+                <li>Home</li>
+              </Link>
+              <Link to="/shop">
+                <li>Shop</li>
+              </Link>
+              <Link to="/contact">
+                <li>Contact</li>
+              </Link>
+              <Link to="/about">
+                <li>About</li>
+              </Link>
             </ul>
           </div>
           <div className="buttons">

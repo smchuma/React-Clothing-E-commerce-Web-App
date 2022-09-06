@@ -1,4 +1,4 @@
-Zenku E-Commerce Clothing Shop. Created with React, Sass and
+Zenku E-Commerce Clothing Shop. Created with React, Sass and Firebase
 
 ![Screenshot1](./src/assets/images/1.png)
 

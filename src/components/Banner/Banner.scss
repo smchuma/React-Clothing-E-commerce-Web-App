@@ -3,24 +3,17 @@
 .banner {
   color: white;
   display: flex;
-  max-height: 70vh;
-  overflow: hidden;
-  max-width: 80%;
-  margin: auto;
+  justify-content: space-between;
+
   font-family: $font-main;
 
-  &-img {
-    img {
-      max-width: 110%;
-      max-height: 110%;
-      padding-top: 10px;
-      padding-left: 100px;
-    }
+  img {
+    width: 30%;
+    margin-left: 50px;
   }
 
   &-text {
-    width: 80%;
-    padding: 120px 0;
+    padding: 100px;
 
     h2 {
       font-size: 30px;

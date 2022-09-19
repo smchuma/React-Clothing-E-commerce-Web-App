@@ -6,8 +6,8 @@ const Categories = () => {
   const categories = [
     {
       id: 1,
-      title: "Hats",
-      ImageSrc: require("../../assets/images/hat.jpg"),
+      title: "T-Shirts",
+      ImageSrc: require("../../assets/images/t-shirt.jpg"),
     },
     {
       id: 2,
@@ -16,18 +16,29 @@ const Categories = () => {
     },
     {
       id: 3,
+      title: "Watches",
+      ImageSrc: require("../../assets/images/watch.jpg"),
+    },
+    {
+      id: 4,
       title: "Sneakers",
       ImageSrc: require("../../assets/images/sneaker2.jpg"),
     },
     {
-      id: 4,
-      title: "Men",
-      ImageSrc: require("../../assets/images/men5.jpg"),
+      id: 5,
+      title: "Jeans",
+      ImageSrc: require("../../assets/images/jeans.jpg"),
+    },
+
+    {
+      id: 6,
+      title: "T-Shirts",
+      ImageSrc: require("../../assets/images/t-shirt.jpg"),
     },
     {
-      id: 5,
-      title: "Women",
-      ImageSrc: require("../../assets/images/woman4.jpg"),
+      id: 6,
+      title: "Suits",
+      ImageSrc: require("../../assets/images/suits.jpg"),
     },
   ];
   return (
@@ -40,7 +51,21 @@ const Categories = () => {
           return <CategoryItem category={category} key={category.id} />;
         })}
       </div>
-      <h1>Choose Your Collection</h1>
+      <h1 className="text">Choose Your Collection</h1>
+
+      <div class="custom-shape-divider-bottom-1663606553">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
     </div>
   );
 };

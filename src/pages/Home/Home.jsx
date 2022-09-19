@@ -1,5 +1,4 @@
 import React from "react";
-import containerImage from "../../assets/images/men1.png";
 import Banner from "../../components/Banner/Banner";
 import Categories from "../../components/Categories/Categories";
 import News from "../../components/News/News";
@@ -13,14 +12,20 @@ const Home = () => {
           <h1>
             Zenku <span>shop</span>
           </h1>
-          <p>
-            We have all the clothes, hats, sneakers that you want. Start
-            shopping Today{" "}
-          </p>
           <button className="btn-primary">Shop Now</button>
         </div>
-        <div className="container-image">
-          <img alt="image1" src={containerImage} />
+        <div class="custom-shape-divider-bottom-1663604683">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+              class="shape-fill"
+            ></path>
+          </svg>
         </div>
       </div>
       <Categories />

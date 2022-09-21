@@ -1,7 +1,5 @@
 import React from "react";
-import Banner from "../../components/Banner/Banner";
-import Categories from "../../components/Categories/Categories";
-import News from "../../components/News/News";
+import { Banner, Categories, News } from "../../components";
 import "./Home.scss";
 
 const Home = () => {

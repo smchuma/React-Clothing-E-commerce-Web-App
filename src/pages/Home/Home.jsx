@@ -12,7 +12,7 @@ const Home = () => {
           </h1>
           <button className="btn-primary">Shop Now</button>
         </div>
-        <div class="custom-shape-divider-bottom-1663604683">
+        <div class="shape-divider">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"

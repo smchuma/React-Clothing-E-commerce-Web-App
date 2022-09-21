@@ -53,7 +53,7 @@ const Categories = () => {
       </div>
       <h1 className="text">Choose Your Collection</h1>
 
-      <div class="custom-shape-divider-bottom-1663606553">
+      <div class="shape-divider2">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

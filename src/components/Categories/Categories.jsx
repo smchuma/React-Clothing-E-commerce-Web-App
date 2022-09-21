@@ -36,7 +36,7 @@ const Categories = () => {
       ImageSrc: require("../../assets/images/t-shirt.jpg"),
     },
     {
-      id: 6,
+      id: 7,
       title: "Suits",
       ImageSrc: require("../../assets/images/suits.jpg"),
     },
@@ -53,7 +53,7 @@ const Categories = () => {
       </div>
       <h1 className="text">Choose Your Collection</h1>
 
-      <div class="shape-divider2">
+      <div className="shape-divider2">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const Categories = () => {
         >
           <path
             d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-            class="shape-fill"
+            className="shape-fill"
           ></path>
         </svg>
       </div>

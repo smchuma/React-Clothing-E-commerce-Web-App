@@ -6,6 +6,8 @@ import {
   GoogleAuthProvider,
 } from "firebase/auth";
 
+import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDaN-bSyiA2DBjB55u8w68sUixVgZVtBd8",
   authDomain: "clothing-ecommerce-c821c.firebaseapp.com",
@@ -27,3 +29,37 @@ provider.setCustomParameters({
 export const auth = getAuth();
 
 export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
+export const signInWithGoogleRedirect = () =>
+  signInWithRedirect(auth, provider);
+
+export const db = getFirestore();
+
+export const createUser = async (userAuth) => {
+  const userDocRef = doc(db, "users", userAuth.uid);
+
+  console.log(userDocRef);
+  const userSnapShot = await getDoc(userDocRef);
+
+  console.log(userSnapShot);
+
+  console.log(userSnapShot.exists());
+
+  // check if user data does not exists
+
+  if (!userSnapShot.exists()) {
+    const { displayName, email } = userAuth;
+    const createdAt = new Date();
+
+    try {
+      await setDoc(userDocRef, {
+        displayName,
+        email,
+        createdAt,
+      });
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  // if it does exist
+  return userDocRef;
+};

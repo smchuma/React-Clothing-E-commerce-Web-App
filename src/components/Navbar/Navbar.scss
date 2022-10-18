@@ -40,8 +40,19 @@
         }
       }
     }
-    .buttons {
+    .button-cart {
       display: flex;
+
+      button {
+        margin-top: 5px;
+      }
+
+      i {
+        font-size: 25px;
+        margin-top: 11px;
+        margin-right: 15px;
+        cursor: pointer;
+      }
     }
   }
 }

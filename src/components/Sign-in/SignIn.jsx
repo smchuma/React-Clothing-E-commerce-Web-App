@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import "./SignIn.scss";
 
@@ -7,6 +7,7 @@ import {
   signInWithGooglePopup,
   signInUserWithEmail,
 } from "../../utils/firebase/firebase";
+import { UserContext } from "../../Context/User.Context";
 
 const SignIn = () => {
   const googleUser = async () => {
@@ -22,6 +23,8 @@ const SignIn = () => {
   const [formFields, setFormFields] = useState(initialFormFields);
   const { email, password } = formFields;
 
+  const { setCurrentUser } = useContext(UserContext);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormFields({ ...formFields, [name]: value });
@@ -35,8 +38,8 @@ const SignIn = () => {
     event.preventDefault();
 
     try {
-      const response = await signInUserWithEmail(email, password);
-      console.log(response);
+      const { user } = await signInUserWithEmail(email, password);
+      setCurrentUser(user);
 
       resetForm();
     } catch (error) {

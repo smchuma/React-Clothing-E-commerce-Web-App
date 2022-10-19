@@ -1,11 +1,17 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../Context/User.Context";
+import { signOutUser } from "../../utils/firebase/firebase";
 import "./Navbar.scss";
 
 const Navbar = () => {
-  const { currentUser } = useContext(UserContext);
-  console.log(currentUser);
+  const { currentUser, setCurrentUser } = useContext(UserContext);
+
+  const handleSignOut = async () => {
+    await signOutUser();
+    setCurrentUser(null);
+  };
+
   return (
     <div>
       <div className="navbar">
@@ -33,9 +39,18 @@ const Navbar = () => {
           </div>
           <div className="button-cart">
             <i className="fa-solid fa-cart-shopping"></i>
-            <Link to="/sign-in" className="buttons">
-              <button className="btn-primary">Sign In</button>
-            </Link>
+            {currentUser ? (
+              <span>
+                <i
+                  className="fa-solid fa-right-from-bracket"
+                  onClick={handleSignOut}
+                ></i>
+              </span>
+            ) : (
+              <Link to="/sign-in">
+                <button className="btn-primary">Sign In</button>
+              </Link>
+            )}
           </div>
         </nav>
       </div>

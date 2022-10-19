@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../Context/User.Context";
 import { createUser, createUserWithEmail } from "../../utils/firebase/firebase";
 import "./SignUp.scss";
 
@@ -14,6 +15,8 @@ const SignUp = () => {
 
   const [formFields, setFormFields] = useState(initialFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
+
+  const { setCurrentUser } = useContext(UserContext);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -34,6 +37,7 @@ const SignUp = () => {
 
     try {
       const { user } = await createUserWithEmail(email, password);
+      setCurrentUser(user);
       await createUser(user, { displayName });
       resetForm();
     } catch (err) {

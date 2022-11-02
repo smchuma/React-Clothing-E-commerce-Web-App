@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 import { createUser, createUserWithEmail } from "../../utils/firebase/firebase";
 import "./SignUp.scss";
 
@@ -34,6 +35,7 @@ const SignUp = () => {
 
     try {
       const { user } = await createUserWithEmail(email, password);
+
       await createUser(user, { displayName });
       resetForm();
     } catch (err) {

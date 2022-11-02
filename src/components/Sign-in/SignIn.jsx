@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import "./SignIn.scss";
 
 import {
-  createUser,
   signInWithGooglePopup,
   signInUserWithEmail,
 } from "../../utils/firebase/firebase";
 
 const SignIn = () => {
+  //!sign in with google
+
   const googleUser = async () => {
-    const { user } = await signInWithGooglePopup();
-    await createUser(user);
+    await signInWithGooglePopup();
   };
 
   const initialFormFields = {
@@ -31,12 +31,13 @@ const SignIn = () => {
     setFormFields(initialFormFields);
   };
 
+  //! sign in with email and password
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const response = await signInUserWithEmail(email, password);
-      console.log(response);
+      await signInUserWithEmail(email, password);
 
       resetForm();
     } catch (error) {

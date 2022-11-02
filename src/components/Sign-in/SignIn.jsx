@@ -1,18 +1,17 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SignIn.scss";
 
 import {
-  createUser,
   signInWithGooglePopup,
   signInUserWithEmail,
 } from "../../utils/firebase/firebase";
-import { UserContext } from "../../Context/User.Context";
 
 const SignIn = () => {
+  //!sign in with google
+
   const googleUser = async () => {
-    const { user } = await signInWithGooglePopup();
-    await createUser(user);
+    await signInWithGooglePopup();
   };
 
   const initialFormFields = {
@@ -23,8 +22,6 @@ const SignIn = () => {
   const [formFields, setFormFields] = useState(initialFormFields);
   const { email, password } = formFields;
 
-  const { setCurrentUser } = useContext(UserContext);
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormFields({ ...formFields, [name]: value });
@@ -34,12 +31,13 @@ const SignIn = () => {
     setFormFields(initialFormFields);
   };
 
+  //! sign in with email and password
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const { user } = await signInUserWithEmail(email, password);
-      setCurrentUser(user);
+      await signInUserWithEmail(email, password);
 
       resetForm();
     } catch (error) {

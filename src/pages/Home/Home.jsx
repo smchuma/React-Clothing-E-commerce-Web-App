@@ -1,5 +1,5 @@
 import React from "react";
-import { Banner, Categories, News } from "../../components";
+import { Banner, Categories } from "../../components";
 import "./Home.scss";
 
 const Home = () => {
@@ -28,7 +28,6 @@ const Home = () => {
       </div>
       <Categories />
       <Banner />
-      <News />
     </>
   );
 };

@@ -1,395 +1,101 @@
-// @media all and (max-width: 1350px) {
-//   .container {
-//     max-height: 50vh;
-//   }
+@media all and (max-width: 1050px) {
+  .navbar {
+    nav {
+      .button-cart {
+        margin-right: 20px;
+      }
+    }
+  }
+}
 
-//   .banner {
-//     max-height: 30vh;
-//   }
+@media all and (max-width: 985px) {
+  .container {
+    height: 100vh;
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-//   .banner {
-//     &-text {
-//       padding: 60px 0;
-//     }
-//   }
+//! hamburger mode for mobile
 
-//   .news-container {
-//     padding: 55px;
-//     height: 20vh;
-//   }
+@media all and (max-width: 867px) {
+  .navbar {
+    nav {
+      .nav-links {
+        display: none;
+      }
+      .button-cart {
+        margin-right: 60px;
+      }
+      button {
+        display: none;
+      }
+    }
+    .hamburger {
+      display: block;
+      margin-left: 20px;
+    }
+  }
+  .banner {
+    text-align: center;
+    height: 50vh;
 
-//   .footer {
-//     height: 25vh;
-//   }
+    .banner-text {
+      padding-top: 0;
+      height: 50vh;
+    }
 
-//   .category-container-title {
-//     h1 {
-//       padding: 20px 0;
-//     }
-//   }
-// }
+    img {
+      display: none;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
 
-// @media all and (max-width: 1250px) {
-//   .container {
-//     max-height: 45vh;
-//   }
-// }
+@media all and (max-width: 595px) {
+  .banner {
+    &-text {
+      h2 {
+        font-size: 20px;
+      }
 
-// @media all and (max-width: 1250px) {
-//   .container {
-//     .container-content {
-//       h1 {
-//         font-size: 4rem;
-//       }
-//     }
-//   }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
 
-//   .news-container {
-//     .input-title {
-//       h2 {
-//         font-size: 30px;
-//       }
-//     }
-//   }
-// }
+@media all and (max-width: 395px) {
+  .banner {
+    height: 50vh;
+    &-text {
+      h2 {
+        font-size: 15px;
+      }
 
-// @media all and (max-width: 1170px) {
-//   .container {
-//     .container-content {
-//       h1 {
-//         font-size: 3rem;
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}
 
-//         span {
-//           font-size: 2.5rem;
-//         }
-//       }
-//       p {
-//         font-size: 18px;
-//       }
-//     }
-//     .container-content {
-//       width: 100%;
-//     }
-//   }
-//   .navbar {
-//     nav {
-//       .buttons {
-//         margin-left: -100px;
-//       }
-//     }
-//   }
-//   .news-container {
-//     .input-title {
-//       h2 {
-//         font-size: 25px;
-//       }
-//     }
-//     .news-input {
-//       width: 350px;
+@media all and (max-width: 320px) {
+  .banner {
+    height: 80vh;
+    &-text {
+      h2 {
+        font-size: 15px;
+      }
 
-//       input {
-//         width: 350px;
-//       }
-//     }
-//   }
-// }
-
-// @media all and (max-width: 1050px) {
-//   .container {
-//     .container-content {
-//       h1 {
-//         font-size: 3rem;
-
-//         span {
-//           font-size: 2.2rem;
-//         }
-//       }
-//       p {
-//         font-size: 15px;
-//       }
-//     }
-//     .container-content {
-//       width: 120%;
-//     }
-//     .container-image {
-//       width: 80%;
-//       margin-right: 300px;
-
-//       img {
-//         width: 200%;
-//         padding-right: 90px;
-//       }
-//     }
-//   }
-
-//   .navbar {
-//     nav {
-//       .buttons {
-//         margin-left: -200px;
-//       }
-//     }
-//   }
-
-//   .banner {
-//     max-width: 90%;
-//   }
-// }
-
-// @media all and (max-width: 1000px) {
-//   .container {
-//     .container-content {
-//       h1 {
-//         font-size: 3rem;
-
-//         span {
-//           font-size: 2.2rem;
-//         }
-//       }
-//     }
-//   }
-
-//   .navbar {
-//     nav {
-//       .buttons {
-//         display: none;
-//       }
-//       .nav-links {
-//         display: none;
-//       }
-//     }
-//   }
-
-//   .banner {
-//     max-width: 90%;
-//   }
-// }
-
-// @media all and (max-width: 985px) {
-//   .container {
-//     background-image: url($asset-img);
-//     background-size: cover;
-//     background-position: top;
-//     background-repeat: no-repeat;
-//     .container-content {
-//       h1 {
-//         font-size: 3rem;
-//         margin-bottom: -10px;
-
-//         span {
-//           font-size: 2.2rem;
-//         }
-//       }
-//       p {
-//         width: 35%;
-//       }
-//     }
-//     .container-content {
-//       padding-left: 100px;
-//     }
-//     .container-image {
-//       display: none;
-//     }
-//   }
-
-//   .banner {
-//     &-text {
-//       p {
-//         font-size: 15px;
-//       }
-//     }
-//   }
-
-//   .category {
-//     display: flex;
-//     flex-direction: column;
-//   }
-
-//   .category-container {
-//     margin-bottom: 50px;
-//   }
-// }
-
-// @media all and (max-width: 867px) {
-//   .container {
-//     .container-content {
-//       padding: 80px 0px;
-
-//       h1 {
-//         font-size: 3rem;
-//         margin-bottom: 2px;
-
-//         span {
-//           font-size: 2.2rem;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media all and (max-width: 720px) {
-//   .container {
-//     .container-content {
-//       padding: 50px 0px;
-//       height: 40vh;
-
-//       h1 {
-//         font-size: 3rem;
-//         margin-bottom: 2px;
-
-//         span {
-//           font-size: 2.2rem;
-//         }
-//       }
-//     }
-//   }
-
-//   .banner {
-//     text-align: center;
-
-//     .banner-img {
-//       display: none;
-//     }
-//     &-text {
-//       margin-left: 70px;
-
-//       h2 {
-//         font-size: 30px;
-//         padding-bottom: 5px;
-//       }
-
-//       p {
-//         text-align: justify;
-//       }
-//     }
-//   }
-
-//   .news-container {
-//     .input-title {
-//       h2 {
-//         font-size: 15px;
-//         padding-right: 100px;
-//       }
-//     }
-//     .news-input {
-//       width: 400px;
-//       margin: auto;
-
-//       input {
-//         width: 400px;
-//       }
-//     }
-//   }
-
-//   .news-container {
-//     flex-direction: column;
-//     text-align: center;
-//     .input-title {
-//       h2 {
-//         font-size: 20px;
-//       }
-//     }
-//     .news-input {
-//       width: 400px;
-//       margin-bottom: 10px;
-//       input {
-//         width: 400px;
-//         padding: 10px;
-//       }
-//     }
-//   }
-// }
-
-// @media all and (max-width: 625px) {
-//   .container {
-//     background-image: url($asset-img2);
-//     background-size: cover;
-//     background-position: bottom;
-//     background-repeat: no-repeat;
-//     height: 30vh;
-//     .container-content {
-//       text-align: center;
-//       padding-right: 50px;
-
-//       h1 {
-//         font-size: 3rem;
-//         margin-bottom: -10px;
-//         padding-top: 30px;
-
-//         span {
-//           font-size: 2.2rem;
-//         }
-//       }
-//       p {
-//         display: none;
-//       }
-//     }
-//   }
-// }
-
-// @media all and (max-width: 500px) {
-//   .banner {
-//     &-text {
-//       margin: auto;
-//       h2 {
-//         font-size: 20px;
-//       }
-
-//       p {
-//         font-size: 12px;
-//       }
-//     }
-//   }
-
-//   .news-container {
-//     .input-title {
-//       h2 {
-//         font-size: 15px;
-//         margin: 0;
-//         text-align: center;
-//         padding: 10px;
-//       }
-//     }
-//     .news-input {
-//       width: 200px;
-//       margin: auto;
-
-//       input {
-//         width: 200px;
-//       }
-//     }
-//   }
-// }
-
-// @media all and (max-width: 315px) {
-//   .container {
-//     .container-content {
-//       padding-right: 50px;
-
-//       h1 {
-//         font-size: 2rem;
-//         margin-bottom: 1px;
-
-//         span {
-//           font-size: 1.5rem;
-//         }
-//       }
-//     }
-//   }
-//   .news-container {
-//     .input-title {
-//       h2 {
-//         font-size: 10px;
-//       }
-//     }
-//     .news-input {
-//       width: 200px;
-
-//       input {
-//         width: 200px;
-//         padding: 8px;
-//         font-size: 10px;
-//         padding-left: 20px;
-//       }
-//     }
-//   }
-// }
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}

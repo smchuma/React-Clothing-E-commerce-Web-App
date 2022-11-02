@@ -46,6 +46,7 @@ const Navbar = () => {
                 <button className="btn-primary">Sign In</button>
               </Link>
             )}
+            <i className="fa-solid fa-bars hamburger"></i>
           </div>
         </nav>
       </div>

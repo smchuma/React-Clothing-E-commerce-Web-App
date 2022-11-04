@@ -30,7 +30,6 @@
       }
 
       button {
-        color: black;
         width: 150px;
         padding: 10px;
         border-radius: 20px;
@@ -81,3 +80,5 @@
     margin-top: 10px;
   }
 }
+
+@import "../../scss/mobile";

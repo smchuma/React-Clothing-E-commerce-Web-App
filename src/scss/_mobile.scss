@@ -1,17 +1,22 @@
-@media all and (max-width: 1050px) {
+@media all and (max-width: 985px) {
   .navbar {
     nav {
+      .nav-links {
+        display: none;
+      }
       .button-cart {
-        margin-right: 20px;
+        margin-right: 60px;
       }
     }
+    .hamburger {
+      display: block;
+      margin-left: 20px;
+    }
+    button {
+      display: none;
+    }
   }
-}
 
-@media all and (max-width: 985px) {
-  .container {
-    height: 100vh;
-  }
   .category {
     display: flex;
     flex-direction: column;
@@ -21,23 +26,6 @@
 //! hamburger mode for mobile
 
 @media all and (max-width: 867px) {
-  .navbar {
-    nav {
-      .nav-links {
-        display: none;
-      }
-      .button-cart {
-        margin-right: 60px;
-      }
-      button {
-        display: none;
-      }
-    }
-    .hamburger {
-      display: block;
-      margin-left: 20px;
-    }
-  }
   .banner {
     text-align: center;
     height: 50vh;
@@ -68,6 +56,20 @@
       }
     }
   }
+
+  .form-input {
+    .form {
+      form {
+        input {
+          width: 350px;
+        }
+      }
+    }
+  }
+
+  .google-btn {
+    background-color: red;
+  }
 }
 
 @media all and (max-width: 395px) {
@@ -83,6 +85,22 @@
       }
     }
   }
+
+  .form-input {
+    h1 {
+      font-size: 25px;
+    }
+    .form {
+      form {
+        input {
+          width: 280px;
+        }
+        button {
+          margin-left: 20%;
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 320px) {
@@ -95,6 +113,21 @@
 
       p {
         font-size: 10px;
+      }
+    }
+  }
+  .form-input {
+    h1 {
+      font-size: 15px;
+    }
+    .form {
+      form {
+        input {
+          width: 200px;
+        }
+        button {
+          margin-left: 10%;
+        }
       }
     }
   }

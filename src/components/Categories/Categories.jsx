@@ -6,38 +6,33 @@ const Categories = () => {
   const categories = [
     {
       id: 1,
-      title: "T-Shirts",
+      title: "T-SHIRTS",
       ImageSrc: require("../../assets/images/t-shirt.jpg"),
     },
     {
       id: 2,
-      title: "Jackets",
+      title: "JACKETS",
       ImageSrc: require("../../assets/images/jackets.jpg"),
     },
     {
       id: 3,
-      title: "Watches",
+      title: "WATCHES",
       ImageSrc: require("../../assets/images/watch.jpg"),
     },
     {
       id: 4,
-      title: "Sneakers",
+      title: "SNEAKERS",
       ImageSrc: require("../../assets/images/sneaker2.jpg"),
     },
     {
       id: 5,
-      title: "Jeans",
+      title: "JEANS",
       ImageSrc: require("../../assets/images/jeans.jpg"),
     },
 
     {
       id: 6,
-      title: "T-Shirts",
-      ImageSrc: require("../../assets/images/t-shirt.jpg"),
-    },
-    {
-      id: 7,
-      title: "Suits",
+      title: "SUITS",
       ImageSrc: require("../../assets/images/suits.jpg"),
     },
   ];

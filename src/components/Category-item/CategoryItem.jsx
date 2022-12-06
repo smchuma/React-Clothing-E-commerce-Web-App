@@ -6,14 +6,16 @@ const CategoryItem = (props) => {
   return (
     <>
       <div className="category-container">
-        <div
-          className="background-image"
-          style={{
-            backgroundImage: `url(${ImageSrc})`,
-          }}
-        />
-        <div className="category-body-container">
-          <h2>{title}</h2>
+        <div className="card">
+          <div
+            className="background-image"
+            style={{
+              backgroundImage: `url(${ImageSrc})`,
+            }}
+          />
+          <div className="title">
+            <h2>{title}</h2>
+          </div>
         </div>
       </div>
     </>

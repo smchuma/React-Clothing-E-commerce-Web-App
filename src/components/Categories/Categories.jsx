@@ -7,33 +7,39 @@ const Categories = () => {
     {
       id: 1,
       title: "T-SHIRTS",
-      ImageSrc: require("../../assets/images/t-shirt.jpg"),
+      ImageSrc:
+        "https://res.cloudinary.com/smchuma/image/upload/v1674566854/t-shirt_w1bjr9.jpg",
     },
     {
       id: 2,
       title: "JACKETS",
-      ImageSrc: require("../../assets/images/jackets.jpg"),
+      ImageSrc:
+        "https://res.cloudinary.com/smchuma/image/upload/v1674566646/jackets_gal6ia.jpg",
     },
     {
       id: 3,
       title: "WATCHES",
-      ImageSrc: require("../../assets/images/watch.jpg"),
+      ImageSrc:
+        "https://res.cloudinary.com/smchuma/image/upload/v1674566072/watch_e2zspg.jpg",
     },
     {
       id: 4,
       title: "SNEAKERS",
-      ImageSrc: require("../../assets/images/sneaker2.jpg"),
+      ImageSrc:
+        "https://res.cloudinary.com/smchuma/image/upload/v1674566900/sneaker2_yfj4gy.jpg",
     },
     {
       id: 5,
       title: "JEANS",
-      ImageSrc: require("../../assets/images/jeans.jpg"),
+      ImageSrc:
+        "https://res.cloudinary.com/smchuma/image/upload/v1674566944/jeans_etbjqh.jpg",
     },
 
     {
       id: 6,
       title: "SUITS",
-      ImageSrc: require("../../assets/images/suits.jpg"),
+      ImageSrc:
+        "https://res.cloudinary.com/smchuma/image/upload/v1674566976/suits_mrrckr.jpg",
     },
   ];
   return (

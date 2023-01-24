@@ -9,14 +9,16 @@
     display: flex;
     justify-content: space-between;
     color: $secondary-color;
-    font-family: $font-main;
 
     .logo {
-      font-family: $font-italic;
       font-size: 1.5rem;
       cursor: pointer;
       padding-top: 3px;
       margin-left: 50px;
+
+      h1 {
+        font-family: $font-italic;
+      }
     }
 
     .nav-links {

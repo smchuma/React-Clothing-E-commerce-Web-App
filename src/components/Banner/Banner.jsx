@@ -1,11 +1,13 @@
 import React from "react";
 import "./Banner.scss";
-import bannerImage from "../../assets/images/men1.png";
 
 const Banner = () => {
   return (
     <div className="banner">
-      <img alt="image1" src={bannerImage} />
+      <img
+        alt="image1"
+        src="https://res.cloudinary.com/smchuma/image/upload/v1674567038/men1_qoyj5h.png"
+      />
       <div className="banner-text">
         <h2>Delivering Smiles & Confidence</h2>
         <p>

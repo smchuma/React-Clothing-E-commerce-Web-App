@@ -1,8 +1,10 @@
 .form-input {
+  top: 100px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  height: 80vh;
   font-family: "Poppins", sans-serif;
 
   h1 {
@@ -10,6 +12,7 @@
   }
 
   .form {
+    margin-top: 50px;
     form {
       display: flex;
       flex-direction: column;

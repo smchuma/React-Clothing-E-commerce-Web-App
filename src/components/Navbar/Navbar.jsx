@@ -16,21 +16,9 @@ const Navbar = () => {
               <h1>Zenku</h1>
             </Link>
           </div>
-          <div className="nav-links">
-            <ul>
-              <Link to="/">
-                <li>Home</li>
-              </Link>
-              <Link to="/shop">
-                <li>Shop</li>
-              </Link>
-              <Link to="/contact">
-                <li>Contact</li>
-              </Link>
-              <Link to="/about">
-                <li>About</li>
-              </Link>
-            </ul>
+          <div className="nav-search">
+            <input type="search" placeholder="search" />
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           <div className="button-cart">
             <i className="fa-solid fa-cart-shopping"></i>

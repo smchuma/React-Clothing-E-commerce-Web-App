@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Banner, Categories } from "../../components";
 import "./Home.scss";
 
@@ -10,7 +11,9 @@ const Home = () => {
           <h1>
             Zenku <span>shop</span>
           </h1>
-          <button className="btn-primary">Shop Now</button>
+          <Link to="/shop">
+            <button className="btn-primary">Shop Now</button>
+          </Link>
         </div>
         <div className="shape-divider">
           <svg

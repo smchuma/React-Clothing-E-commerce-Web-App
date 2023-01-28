@@ -19,8 +19,7 @@ const firebaseConfig = {
   messagingSenderId: "892202104395",
   appId: "1:892202104395:web:152a09b017b8d349067fce",
 };
-
-const firebaseApp = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 const provider = new GoogleAuthProvider();
 provider.setCustomParameters({

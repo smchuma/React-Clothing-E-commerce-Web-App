@@ -1,0 +1,26 @@
+@import "../../scss/config";
+
+.products {
+  width: 100%;
+  padding-bottom: 120px;
+  &-banner {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://res.cloudinary.com/smchuma/image/upload/v1674566854/t-shirt_w1bjr9.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #363535;
+    margin: 30px;
+    border-radius: 20px;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}

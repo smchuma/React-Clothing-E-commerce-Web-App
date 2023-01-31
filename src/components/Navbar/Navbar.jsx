@@ -21,7 +21,9 @@ const Navbar = () => {
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           <div className="button-cart">
-            <i className="fa-solid fa-cart-shopping"></i>
+            <Link to="/cart">
+              <i className="fa-solid fa-cart-shopping"></i>
+            </Link>
             {currentUser ? (
               <span>
                 <i
@@ -34,7 +36,7 @@ const Navbar = () => {
                 <button className="btn-primary">Sign In</button>
               </Link>
             )}
-            <i className="fa-solid fa-bars hamburger"></i>
+            {/* <i className="fa-solid fa-bars hamburger"></i> */}
           </div>
         </nav>
       </div>
